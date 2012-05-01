@@ -31,7 +31,7 @@
         $('#console').html(''); // clear console
         log_console('Your input was: "' + user_text + '"');
         try {
-            var parsed = SCHEEM.parse(user_text);
+            var parsed = Scheem.parse(user_text);
             log_console('Parsed: ' + JSON.stringify(parsed));
             try {
                 var result = evalScheem(parsed, {});
