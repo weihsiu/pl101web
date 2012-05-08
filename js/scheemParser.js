@@ -303,6 +303,7 @@ Scheem = (function(){
           }
           if (result1 !== null) {
             result2 = parse_expr();
+            result2 = result2 !== null ? result2 : "";
             if (result2 !== null) {
               result3 = [];
               result4 = parse_spaceexpr();
