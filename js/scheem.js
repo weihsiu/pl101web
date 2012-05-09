@@ -67,6 +67,7 @@ rootEnv = {
       }
     },
     'nil?': function(x) {
+      console.log(x);
       if (x.length === 0) {
         return '#t';
       } else {
