@@ -355,7 +355,7 @@ Scheem = (function(){
           pos = pos1;
         }
         if (result0 !== null) {
-          result0 = (function(offset, e, es) { es.unshift(e); return es; })(pos0, result0[2], result0[3]);
+          result0 = (function(offset, e, es) { if (e !== '') es.unshift(e); return es; })(pos0, result0[2], result0[3]);
         }
         if (result0 === null) {
           pos = pos0;
