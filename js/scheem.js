@@ -66,6 +66,13 @@ rootEnv = {
         return '#t';
       }
     },
+    'nil?': function(x) {
+      if (x.length === 0) {
+        return '#t';
+      } else {
+        return '#f';
+      }
+    },
     'cons': function(x, y) {
       y.unshift(x);
       return y;
