@@ -69,11 +69,17 @@ rootEnv = {
       }
     },
     'nil?': function(x) {
-      console.log(x);
       if (x.length === 0) {
         return '#t';
       } else {
         return '#f';
+      }
+    },
+    'atom?': function(x) {
+      if (typeof x === 'object') {
+        return '#f';
+      } else {
+        return '#t';
       }
     },
     'cons': function(x, y) {
