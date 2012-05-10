@@ -12,6 +12,8 @@ if (typeof module !== "undefined" && module !== null) {
 
 rootEnv = {
   bindings: {
+    '#t': '#t',
+    '#f': '#f',
     '+': function(x, y) {
       return x + y;
     },
