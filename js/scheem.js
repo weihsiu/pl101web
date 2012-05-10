@@ -119,7 +119,9 @@ show = function(x) {
         e = x[_i];
         msg += show(e) + ' ';
       }
-      msg = msg.slice(0, msg.length - 1);
+      if (msg.length > 1) {
+        msg = msg.slice(0, msg.length - 1);
+      }
       return msg += ')';
   }
 };
